@@ -1,12 +1,17 @@
 
 import pygame
 
+GAME_TITLE = 'Plants VS Zombies'
+WIDTH = 400
+HEIGHT = 400
+
+
 class Control:
     def __init__(self):
         pygame.init()
-        self.screensize = (400,400)
+        self.screensize = (WIDTH, HEIGHT)
         self.screen = pygame.display.set_mode(self.screensize)
-        pygame.display.set_caption('Plants VS Zombies')
+        pygame.display.set_caption(GAME_TITLE)
         self.clock = pygame.time.Clock()
         self.gamestate = True
         self.mainloop()
